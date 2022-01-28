@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <script>
+        function pictureChange1()
+         {
+          document.getElementById("change").src="/images/imgmain-1.png";
+         }
+        
+        function pictureChange2()
+         {
+          document.getElementById("change").src="/images/imgmain-2.png";
+         }
+
+        function pictureChange3()
+         {
+          document.getElementById("change").src="/images/imgmain-3.png";
+         }
+    </script>
+       
+    <header>
+        <a href="#">&lt;Back to search</a>
+        <a href="#">Add to cart</a>
+    </header>
+    <main>
+        <div class="left">
+            <div class="imgmain">
+                <img src="/images/imgmain-1.png" alt="" class="main" id="change">
+            </div>
+            <p class="enlarge">Click below images to enlarge</p>
+            <div class="img">
+                <img src="/images/img-1.png" alt="" class="img1" onclick="pictureChange1()">
+                <img src="/images/img-2.png" alt="" class="img2" onclick="pictureChange2()">
+                <img src="/images/img-3.png" alt="" class="img3" onclick="pictureChange3()">
+            </div>
+        </div>
+        <div class="right">
+            <header>
+                <h2>Dazzle</h2>
+                <p>Kate Dresses</p>
+            </header>
+            <div class="color-sec">
+                <h4>Colors</h4>
+                <div class="colors">
+                    <img src="/images/red.svg" alt="" onclick="pictureChange1()">
+                    <img src="/images/green.svg" alt="" onclick="pictureChange2()">
+                    <img src="/images/grey.svg" alt="" onclick="pictureChange3()">
+                </div>
+            </div>
+            <div class="rating-sec">
+                <h4>Rating</h4>
+                <img src="/images/rating.svg" alt="">
+            </div>
+            <div class="desc-sec">
+                <h4>Description</h4>
+                <p>Nam et eveniet esse est aperiam aut. Ea ab et consequuntur id.<br>Sint nam eum sed ut. Asperiores similique quas quidem perferendis dolorem sint. <br>
+                </p>
+                <p>Incidunt amet assumenda qui praesentium assumenda consequatur corporis. <br>Consequatur dolorem tempora animi consequuntur ut quam exercitationem ea.<br>Voluptates soluta perspiciatis enim in magni dignissimos sed debitis. Fugit soluta nihil iure.</p>
+            </div>
+            <div class="button-sec">
+                <button class="buy" type="button">Purchase</button>
+                <button class="cart" type="button">Add to cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
